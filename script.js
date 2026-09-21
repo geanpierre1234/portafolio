@@ -4,7 +4,7 @@ const profile = {
   email: "ledesmatorresgeanpierre@gmail.com",
   linkedin: "https://www.linkedin.com/in/carlos-torres-developer/",
   github: "https://github.com/geanpierre1234",
-  cv: "", // Ruta de tu PDF, por ejemplo: "assets/Charles-Ledesma-CV.pdf".
+  cv: "assets/CV_Charles_Ledesma_Torres.docx",
 };
 
 const profileLinks = [
@@ -32,7 +32,7 @@ for (const { id, value, label } of profileLinks) {
   link.removeAttribute("aria-disabled");
   link.removeAttribute("aria-describedby");
   if (id === "cv-link") {
-    link.setAttribute("download", "Charles-Ledesma-CV.pdf");
+    link.setAttribute("download", decodeURIComponent(url.pathname.split("/").pop()));
   } else {
     link.target = "_blank";
     link.rel = "noopener noreferrer";

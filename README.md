@@ -19,4 +19,4 @@ En el repositorio, abre **Settings → Pages**. Selecciona **Deploy from a branc
 
 ## Actualizar el CV
 
-Guarda el PDF en `assets/` y configura su ruta en `profile.cv` dentro de `script.js`.
+El botón descarga `assets/CV_Charles_Ledesma_Torres.docx`. Para reemplazarlo, actualiza ese archivo. Si cambias el nombre o formato, actualiza también la ruta en `profile.cv` dentro de `script.js` y el enlace `cv-link` en `index.html`.
